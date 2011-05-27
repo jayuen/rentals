@@ -1,0 +1,20 @@
+common: &common
+  host :localhost
+
+development:
+  <<: *common
+  database: rentals_development
+
+test:
+  <<: *common
+  database: rentals_test
+
+# set these environment variables on your prod server
+production:
+  <<: *common
+  database: rentals_production 
+  # slaves:
+  #   - host: slave1.local
+  #     port: 27018
+  #   - host: slave2.local
+  #     port: 27019

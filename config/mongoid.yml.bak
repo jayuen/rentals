@@ -1,0 +1,13 @@
+common: &defaults
+  host: localhost
+
+development:
+  <<: *defaults
+  database: rentals_dev
+
+test:
+  <<: *defaults
+  database: rentals_test 
+
+production:
+  database: rentals_production
