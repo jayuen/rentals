@@ -5,10 +5,8 @@
       %title Rentals
       = stylesheet_link_tag :all
       = javascript_include_tag "jquery-1.6.1.min.js"
-      = javascript_include_tag "prototype.js"
       = javascript_include_tag "rails.js"
+      = javascript_include_tag "jquery.tmpl.min.js"
       = csrf_meta_tag
-      :javascript
-        var $j = jQuery.noConflict();
-
+      = yield :head
     = yield

@@ -1,0 +1,30 @@
+<% content_for :head do %>
+  <%= javascript_include_tag 'home.js' %>
+<% end %>
+<div id='nav'>
+  <div id='menu'>
+    <ul>
+      <li class='title'>
+        <a class='title-link' data-remote='true' data-method='get' href='/'>761 Bay Street</a>
+      </li>
+
+      <li>
+        <a class='nav-link apply' data-remote='true' data-method='get' href='forms/new'>Apply</a>
+      </li>
+
+      <li>
+        <a class='nav-link' data-remote='true' data-method='get' href='photos'>Photos</a>
+      </li>
+
+      <li>
+        <a class='nav-link' data-remote='true' data-method='get' href='testimonials'>Testimonials</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div id='content'></div>
+
+<!-- JS TEMPLATES -->
+<%= render :partial => 'home/new_form.js' %>
+
