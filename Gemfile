@@ -12,7 +12,6 @@ gem 'unicorn'
 
 gem 'sass'
 gem 'haml'
-gem 'jquery-ujs'
 
 # Deploy with Capistrano
 # gem 'capistrano'
