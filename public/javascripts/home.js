@@ -1,21 +1,21 @@
 $(document).ready(function(){
-  $('.apply').bind("ajaxSuccess", function(e, data, status, xhr){
+  $('.apply').bind("ajax:success", function(e, data, status, xhr){
     $('#new-form-tmpl').tmpl(xhr).appendTo('#content');
   });
 
   $('.title-link').click(function(){
     $('.nav-link').parent().removeClass('nav-selected');
     $('#content').removeClass('content-selected');  
+    $('#content').empty();
+    $('#default-content-tmpl').tmpl().appendTo('#content');
   });
-
 
   $('.nav-link').click(function(){
     $('.nav-link').parent().removeClass('nav-selected');
     $(this).parent().addClass('nav-selected');  
     $('#content').addClass('content-selected');  
+    $('#content').empty();
   });
 
-  $('#submit-new-form').click(function(){
-    $.post('forms', $('#new-form').serialize()); 
-  });
+  $('#default-content-tmpl').tmpl().appendTo('#content');
 });

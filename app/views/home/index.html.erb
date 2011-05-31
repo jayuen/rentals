@@ -1,11 +1,12 @@
 <% content_for :head do %>
   <%= javascript_include_tag 'home.js' %>
+  <%= javascript_include_tag 'forms.js' %>
 <% end %>
 <div id='nav'>
   <div id='menu'>
     <ul>
       <li class='title'>
-        <a class='title-link' data-remote='true' data-method='get' href='/'>761 Bay Street</a>
+        <a class='title-link' href='#'>761 Bay Street</a>
       </li>
 
       <li>
@@ -26,5 +27,7 @@
 <div id='content'></div>
 
 <!-- JS TEMPLATES -->
-<%= render :partial => 'home/new_form.js' %>
+<%= render :partial => 'home/content.js' %>
+<%= render :partial => 'forms/new.js' %>
+<%= render :partial => 'forms/create.js' %>
 

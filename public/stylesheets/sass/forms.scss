@@ -1,0 +1,29 @@
+#new-form {
+  padding: 20px;
+  
+  input {
+    height: 20px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  .label {
+    padding-top: 5px;
+  }
+
+  #section-submit {
+    margin-top: 15px;
+    font-size: 20px;
+    padding-left: 430px;
+    
+    input {
+      height: 30px;
+      width: 80px;
+    }
+  }
+}
+

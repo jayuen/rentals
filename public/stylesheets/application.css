@@ -40,3 +40,12 @@ html, body {
   float: left; }
   #content.content-selected {
     background-color: #aaaaaa; }
+
+#default-content {
+  position: relative;
+  top: 100px; }
+  #default-content .photo {
+    float: left;
+    height: 97px;
+    width: 97px;
+    border: 1px dotted #444444; }

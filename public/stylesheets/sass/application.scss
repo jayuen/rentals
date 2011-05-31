@@ -67,3 +67,16 @@ html, body {
   }
 }
 
+#default-content {
+  position: relative;
+  top: 100px;
+
+  .photo {
+    float: left;  
+    height: 97px;
+    width: 97px;
+    border: 1px dotted $text-color;
+  }
+}
+
+
