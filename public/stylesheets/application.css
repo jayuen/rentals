@@ -49,3 +49,10 @@ html, body {
     height: 97px;
     width: 97px;
     border: 1px dotted #444444; }
+
+#wait {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  text-align: center;
+  z-index: 999; }

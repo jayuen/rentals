@@ -1,0 +1,12 @@
+development:
+  address: <address>
+  port: <port>
+  domain: <domain>
+  user_name: <user_name>
+  password: <password>
+  authentication: <authentication>
+  enable_startttls_auto: <enable_startttls_auto>   
+
+test:
+
+production:

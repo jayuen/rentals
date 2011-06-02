@@ -79,4 +79,10 @@ html, body {
   }
 }
 
-
+#wait {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  text-align: center;
+  z-index: 999; 
+}
