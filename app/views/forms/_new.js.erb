@@ -1,28 +1,35 @@
 <script id='new-form-tmpl' type="text/x-jquery-tmpl">
   <form id='new-form'>
-    <div id='section-name'>
-      <div class='label'>Name:</div>
-      <input type='text' id='form_first_name' name="form[first_name]" placeholder='First' style='width:200px'/>
-      <input type='text' id='form_last_name' name="form[last_name]" placeholder = 'Last' style='width:300px'/>
+    <div class='section'>
+      <div class='label'>Personal information:</div>
+      <div class='wrapper'>
+        <%= input 'first_name', 'First name', :width => 250 %>
+        <%= input 'last_name', 'Last name', :width => 250 %>
+      </div>
+      <div class='wrapper'>
+        <%= input 'sin', 'Social insurance number', :width => 200 %>
+        <%= input 'date_of_birth', 'Date of birth', :width => 300 %>
+      </div>
+      <div class='wrapper'>
+        <%= input 'email', 'Email', :width => 502 %>
+      </div>
     </div>
 
-    <div id='section-address'>
+    <div class='section'>
       <div class='label'>Current Address:</div>
-      <div>
-        <input type='text' id='form_street' name="form[street]" placeholder='Street and number' style='width:200px;'/>
-        <input type='text' id='form_appt_no' name="form[appt_no]" placeholder='(Apt. #)' style='width:300px;'/>
+      <div class='wrapper'>
+        <%= input 'street', 'Street and number', :width => 500 %>
       </div>
-
-      <div>
-        <input type='text' id='form_city' name="form[city]" placeholder='City' style='width:200px;'/>
-        <input type='text' id='form_province' name="form[province]" placeholder='Province' style='width:148px'/>
-        <input type='text' id='form_postal' name="form[postal]" placeholder='Postal code' style="width:148px"/>
+      <div class='wrapper'>
+        <%= input 'city', 'City', :width => 205 %>
+        <%= input 'province', 'Province', :width => 145 %>
+        <%= input 'postal', 'Postal code', :width => 145 %>
       </div>
     </div>
 
-    <div id='section-submit'>
+    <div id='section-submit' class='wrapper'>
       <input type='button' id='submit-new-form' value='Submit'/>
     </div>
   </form>
 </script>
-  
+

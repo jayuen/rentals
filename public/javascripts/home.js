@@ -18,4 +18,12 @@ $(document).ready(function(){
   });
 
   $('#default-content-tmpl').tmpl().appendTo('#content');
+
+  $('#content').ajaxStart(function(){
+    $('#wait').show();
+  });
+
+  $('#content').ajaxStop(function(){
+    $('#wait').hide();
+  });
 });

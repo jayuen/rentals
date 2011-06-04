@@ -10,16 +10,4 @@ $(document).ready(function(){
       $('#new-form').serialize(),
      success); 
   });
-
-  $('#content').ajaxStart(function(){
-    console.log('start');
-    $('#wait').show();
-  });
-
-  $('#content').ajaxStop(function(){
-    console.log('stop');
-    $('#wait').hide();
-  });
-
-
 });

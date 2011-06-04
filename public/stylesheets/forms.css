@@ -7,7 +7,9 @@
     border-radius: 3px;
     border: 1px solid gray;
     margin-top: 2px;
-    margin-bottom: 2px; }
+    margin-bottom: 5px; }
+  #new-form .wrapper {
+    clear: both; }
   #new-form .label {
     padding-top: 5px; }
   #new-form #section-submit {
@@ -17,3 +19,8 @@
     #new-form #section-submit input {
       height: 30px;
       width: 80px; }
+  #new-form .section {
+    clear: both; }
+    #new-form .section .label {
+      font-size: 20px;
+      font-weight: bold; }

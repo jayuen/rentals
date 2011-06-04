@@ -51,6 +51,7 @@ html, body {
     border: 1px dotted #444444; }
 
 #wait {
+  display: none;
   position: absolute;
   top: 0px;
   width: 100%;
